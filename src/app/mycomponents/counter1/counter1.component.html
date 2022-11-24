@@ -1,0 +1,9 @@
+<h1>Counter 1</h1>
+<div class="form-group" style="margin-left:30px; margin-top:30px">
+    <input type="text"  name="post" [(ngModel)]="post">
+</div>
+<div>
+    <br>
+    <button type="submit" class="btn btn-primary" (click)="AddPosts(post)">Add</button>
+</div>
+<app-counter2 [childPosts]="parentPosts"></app-counter2>
